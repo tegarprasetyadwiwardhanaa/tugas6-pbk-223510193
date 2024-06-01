@@ -65,7 +65,6 @@ export default defineComponent({
 
       let response;
       if (form.id) {
-        // Update existing article
         response = await axios.put(`http://localhost:3000/articles/${form.id}`, form);
         const updatedArticle = response.data;
         const index = articles.value.findIndex(article => article.id === updatedArticle.id);
@@ -73,13 +72,10 @@ export default defineComponent({
           articles.value.splice(index, 1, updatedArticle);
         }
       } else {
-        // Create new article with a unique ID
-        form.id = uuidv4(); // Using UUID as ID
+        form.id = uuidv4();
         response = await axios.post('http://localhost:3000/articles', form);
         articles.value.push(response.data);
       }
-
-      // Reset form fields
       form.id = null;
       form.title = '';
       form.content = '';
