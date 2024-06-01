@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "judul 1",
+      "content": "ini content 1"
+    },
+    {
+      "id": "2",
+      "title": "judul 2",
+      "content": "ini content 2"
+    },
+    {
+      "id": "3",
+      "title": "judul 3",
+      "content": "ini content 3"
+    },
+    {
+      "id": "4",
+      "title": "kafka",
+      "content": "cantik"
+    },
+    {
+      "id": "9c1117b4-9fdb-451e-9538-a215ca174c4d",
+      "title": "bronya",
+      "content": "123"
+    },
+    {
+      "id": "a3fd1dbc-dde1-466c-9354-b6400be94e50",
+      "title": "tes sajahh",
+      "content": "heheheh"
+    }
+  ]
+}
